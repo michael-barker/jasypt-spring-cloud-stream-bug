@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: stream-jasypt-bug
+
+encrypted.value: ENC(2PIL40h2gCAYwU0T2G0DN72Op1ZN3WFC)
+jasypt.encryptor.password: password
+
+---
+spring:
+  profiles: other
+
+encrypted.value: ENC(XfVxLqxzK4fj9zT1z0pgY1qCdJVXXzwn)
+jasypt.encryptor.password: otherPassword
